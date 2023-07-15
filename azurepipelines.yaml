@@ -1,0 +1,21 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool: 'Default'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    version: '6.x'
+    packageType: 'sdk'
+
+- script: dotnet restore
+  displayName: 'Restore NuGet packages'
+
+- script: dotnet build --configuration Release --no-restore
+  displayName: 'Build'
+
+- script: dotnet test --configuration Release --no-restore
+  displayName: 'Run Tests'
