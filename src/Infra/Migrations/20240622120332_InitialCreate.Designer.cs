@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FinanceControl.Infra.Migrations
 {
     [DbContext(typeof(FinanceControlDbContext))]
-    [Migration("20240222160734_InitialCreate")]
+    [Migration("20240622120332_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -20,17 +20,20 @@ namespace FinanceControl.Infra.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.1")
+                .HasAnnotation("ProductVersion", "8.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Account", b =>
+            modelBuilder.Entity("FinanceControl.Domain.BankAccount", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<decimal>("Balance")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("BalanceInDolar")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("CreatedAt")
@@ -43,9 +46,14 @@ namespace FinanceControl.Infra.Migrations
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Accounts");
+                    b.HasIndex("UserId");
+
+                    b.ToTable("BankAccounts");
                 });
 
             modelBuilder.Entity("FinanceControl.Domain.BudgetAlert", b =>
@@ -55,6 +63,9 @@ namespace FinanceControl.Infra.Migrations
 
                     b.Property<string>("AccountId")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BankAccountId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CategoryId")
@@ -75,18 +86,21 @@ namespace FinanceControl.Infra.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AccountId");
+                    b.HasIndex("BankAccountId");
 
                     b.ToTable("BudgetAlert");
                 });
 
-            modelBuilder.Entity("Transaction", b =>
+            modelBuilder.Entity("FinanceControl.Domain.Transaction", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("AccountId")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BankAccountId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CategoryId")
@@ -114,12 +128,12 @@ namespace FinanceControl.Infra.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AccountId");
+                    b.HasIndex("BankAccountId");
 
-                    b.ToTable("Transactions");
+                    b.ToTable("Transaction");
                 });
 
-            modelBuilder.Entity("TransactionCategory", b =>
+            modelBuilder.Entity("FinanceControl.Domain.TransactionCategory", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -146,29 +160,61 @@ namespace FinanceControl.Infra.Migrations
                     b.ToTable("TransactionCategories");
                 });
 
+            modelBuilder.Entity("FinanceControl.Domain.User", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("FinanceControl.Domain.BankAccount", b =>
+                {
+                    b.HasOne("FinanceControl.Domain.User", null)
+                        .WithMany("BankAccounts")
+                        .HasForeignKey("UserId");
+                });
+
             modelBuilder.Entity("FinanceControl.Domain.BudgetAlert", b =>
                 {
-                    b.HasOne("Account", null)
+                    b.HasOne("FinanceControl.Domain.BankAccount", null)
                         .WithMany("BudgetAlerts")
-                        .HasForeignKey("AccountId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("BankAccountId");
                 });
 
-            modelBuilder.Entity("Transaction", b =>
+            modelBuilder.Entity("FinanceControl.Domain.Transaction", b =>
                 {
-                    b.HasOne("Account", null)
+                    b.HasOne("FinanceControl.Domain.BankAccount", null)
                         .WithMany("Transactions")
-                        .HasForeignKey("AccountId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("BankAccountId");
                 });
 
-            modelBuilder.Entity("Account", b =>
+            modelBuilder.Entity("FinanceControl.Domain.BankAccount", b =>
                 {
                     b.Navigation("BudgetAlerts");
 
                     b.Navigation("Transactions");
+                });
+
+            modelBuilder.Entity("FinanceControl.Domain.User", b =>
+                {
+                    b.Navigation("BankAccounts");
                 });
 #pragma warning restore 612, 618
         }

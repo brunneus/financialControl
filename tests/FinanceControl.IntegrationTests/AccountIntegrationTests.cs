@@ -1,4 +1,4 @@
-using FinanceControl.Controllers;
+using FinanceControl.Application;
 using FinanceControl.Domain;
 using FinanceControl.Infra;
 using FluentAssertions;
@@ -33,7 +33,7 @@ namespace FinanceControl.IntegrationTests
                 .ServiceProvider
                 .GetRequiredService<FinanceControlDbContext>();
 
-            var account = new Account("Teste");
+            var account = new BankAccount("Teste");
             var transactionCategory = new TransactionCategory("Expenses", "Expenses description", TransactionType.Expense);
             var budgetAlert = new BudgetAlert(account, transactionCategory, 200, 0.7m);
             account.AddBudgetAlert(budgetAlert);
@@ -49,7 +49,7 @@ namespace FinanceControl.IntegrationTests
             var response = await httpClient.SendAsync(createAccountRequest);
             await response.Content.ReadAsStringAsync();
 
-            var createdTransaction = dbContext.Transactions.First();
+            var createdTransaction = dbContext.BankAccounts.First().Transactions.First();
             createdTransaction.Value.Should().Be(150);
             createdTransaction.Description.Should().Be("Grocery");
             createdTransaction.Type.Should().Be(TransactionType.Expense);
@@ -57,7 +57,7 @@ namespace FinanceControl.IntegrationTests
             createdTransaction.CategoryId.Should().Be(transactionCategory.Id);
         }
 
-        private static HttpRequestMessage CreateRequest(Account account, CreateTransactionRequest accountRequest)
+        private static HttpRequestMessage CreateRequest(BankAccount account, CreateTransactionRequest accountRequest)
         {
             var json = JsonSerializer.Serialize(accountRequest);
             var body = new StringContent(json, Encoding.UTF8, "application/json");

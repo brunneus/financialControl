@@ -1,11 +1,12 @@
 ﻿using Asp.Versioning;
+using FinanceControl.Application;
 using FinanceControl.Infra;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace FinanceControl.Controllers;
-
-public record CreateTransactionCategoryRequest(string Name, string Description, TransactionType CategoryType);
 
 [ApiController]
 [ApiVersion(1.0)]
@@ -13,21 +14,13 @@ public record CreateTransactionCategoryRequest(string Name, string Description, 
 public class TransactionCategoryController : ControllerBase
 {
     [HttpPost]
+    [Authorize(Policy = "Admin")]
     public async Task<IActionResult> CreateTransactionCategory(
-        [FromBody] CreateTransactionCategoryRequest transactionRequest,
-        [FromServices] FinanceControlDbContext context)
+        [FromServices] IMediator mediator,
+        [FromBody] CreateTransactionCategoryRequest transactionRequest)
     {
-        var transactionCategory = new TransactionCategory(
-            transactionRequest.Name,
-            transactionRequest.Description,
-            transactionRequest.CategoryType
-        );
-
-        context.TransactionCategories.Add(transactionCategory);
-
-        await context.SaveChangesAsync();
-
-        return Ok(transactionCategory);
+        var result = await mediator.Send(transactionRequest);
+        return result.ToActionResult(this);
     }
 
     [HttpGet]

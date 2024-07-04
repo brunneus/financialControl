@@ -1,4 +1,4 @@
-@FinanceControl_HostAddress = http://localhost:5160
+@FinanceControl_HostAddress = https://localhost:7008
 
 ###
 
@@ -11,5 +11,35 @@ Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJTUXljeT
 POST {{FinanceControl_HostAddress}}/user-account/
 Accept: application/json
 Authorization: Bearer 
+
+###
+
+POST {{FinanceControl_HostAddress}}/api/user-account
+Content-Type: application/json
+
+{
+  "name": "Bruno Joaquim",
+  "email": "bruno_dev@outlook.com",
+  "password": "Password@123",
+  "confirmPassword": "Password@123"
+}
+
+###
+
+POST {{FinanceControl_HostAddress}}/api/v1/user-account/login
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com",
+  "password": "SuperPassword@123"
+}
+
+###
+
+
+GET {{FinanceControl_HostAddress}}/api/v1/bank-accounts
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzZjE3YTQwMC00ZWY1LTRmYTctYTMyMC03Mjk0OTQ5OTkyMGIiLCJ1bmlxdWVfbmFtZSI6IkFkbWluIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJqdGkiOiI3ZTdiMDk5YS00ZmU0LTQ5MjgtODdjOS1iMWU0ZDUwZDcwZDciLCJpYXQiOjE3MjAyNzE1NTgsIlJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyMDI3MTU1OCwiZXhwIjoxNzIwMjcyNDU4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUxNTIiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUxNTIifQ.mHiN8EQiGHHQjW8A4bgo0pMU6f0EJDtR4QG5EjEiXWQ
+X-Correlation-Id: "request123correlationId"
+Content-Type: application/json
 
 ###

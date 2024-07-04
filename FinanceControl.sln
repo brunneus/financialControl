@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanceControl.IntegrationT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanceControl", "src\FinanceControl.csproj", "{4AB67DD7-ABFF-4CA5-BE54-67AFF3815DF2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialControl.UnitTests", "tests\FinancialControl.UnitTests\FinancialControl.UnitTests.csproj", "{3D02DF06-A443-4B41-917D-CEE40608455A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{4AB67DD7-ABFF-4CA5-BE54-67AFF3815DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AB67DD7-ABFF-4CA5-BE54-67AFF3815DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AB67DD7-ABFF-4CA5-BE54-67AFF3815DF2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D02DF06-A443-4B41-917D-CEE40608455A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D02DF06-A443-4B41-917D-CEE40608455A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D02DF06-A443-4B41-917D-CEE40608455A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D02DF06-A443-4B41-917D-CEE40608455A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿using FinanceControl.Domain;
+﻿namespace FinanceControl.Domain;
 
 public class Transaction : Entity
 {
@@ -7,7 +7,7 @@ public class Transaction : Entity
 
     }
 
-    public Transaction(string description, decimal value, decimal usdValue, TransactionCategory category, Account account)
+    public Transaction(string description, decimal value, decimal usdValue, TransactionCategory category, BankAccount account)
     {
         Description = description;
         Value = value;

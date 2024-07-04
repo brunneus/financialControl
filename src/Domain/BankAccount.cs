@@ -1,12 +1,12 @@
-﻿using FinanceControl.Domain;
+﻿namespace FinanceControl.Domain;
 
-public class Account : Entity
+public class BankAccount : Entity
 {
     private readonly List<Transaction> _transactions;
     private readonly List<BudgetAlert> _budgetAlerts;
     private readonly List<IDomainEvent> _domainEvents;
 
-    public Account(string name)
+    public BankAccount(string name)
     {
         UpdatedAt = DateTime.UtcNow;
         Balance = 0;
@@ -18,6 +18,7 @@ public class Account : Entity
 
     public string Name { get; private set; }
     public decimal Balance { get; private set; }
+    public decimal BalanceInDolar { get; private set; }
     public List<Transaction> Transactions => _transactions;
     public List<BudgetAlert> BudgetAlerts => _budgetAlerts;
     public IEnumerable<IDomainEvent> Events => _domainEvents;
@@ -47,11 +48,4 @@ public class Account : Entity
     {
         _budgetAlerts.Add(budgetAlert);
     }
-}
-
-public interface IDomainEvent { }
-
-public class BudgetAlertDomainEvent(BudgetAlert BudgetAlert) : IDomainEvent
-{
-    public BudgetAlert BudgetAlert { get; } = BudgetAlert;
 }

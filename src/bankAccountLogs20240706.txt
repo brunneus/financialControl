@@ -1,0 +1,607 @@
+2024-07-06 09:21:15.218 -03:00 [WRN] No store type was specified for the decimal property 'Balance' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:21:15.251 -03:00 [WRN] No store type was specified for the decimal property 'BalanceInDolar' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:21:15.252 -03:00 [WRN] No store type was specified for the decimal property 'Threshold' on entity type 'BudgetAlert'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:21:15.253 -03:00 [WRN] No store type was specified for the decimal property 'Value' on entity type 'BudgetAlert'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:21:15.254 -03:00 [WRN] No store type was specified for the decimal property 'UsdValue' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:21:15.255 -03:00 [WRN] No store type was specified for the decimal property 'Value' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:21:15.871 -03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 09:21:15.896 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 09:21:15.900 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 09:21:15.903 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 09:21:15.924 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-07-06 09:21:15.938 -03:00 [INF] No migrations were applied. The database is already up to date.
+2024-07-06 09:21:16.024 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 09:21:16.027 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 09:21:16.030 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 09:21:16.032 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 09:21:16.035 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-07-06 09:21:16.036 -03:00 [INF] No migrations were applied. The database is already up to date.
+2024-07-06 09:21:16.097 -03:00 [INF] User profile is available. Using 'C:\Users\Bruno Joaquim\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-06 09:21:16.507 -03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-06 09:21:16.801 -03:00 [INF] Now listening on: https://localhost:7008
+2024-07-06 09:21:16.802 -03:00 [INF] Now listening on: http://localhost:5160
+2024-07-06 09:21:16.804 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-06 09:21:16.805 -03:00 [INF] Hosting environment: Development
+2024-07-06 09:21:16.806 -03:00 [INF] Content root path: C:\Users\Bruno Joaquim\Desktop\financialControl\src
+2024-07-06 09:21:19.131 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7008/api/user-account/login - application/json 67
+2024-07-06 09:21:19.188 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7008/api/user-account/login - 404 0 null 60.1445ms
+2024-07-06 09:21:19.192 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7008/api/user-account/login, Response status code: 404
+2024-07-06 09:21:26.871 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7008/api/user-account/login - application/json 67
+2024-07-06 09:21:26.875 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7008/api/user-account/login - 404 0 null 4.2747ms
+2024-07-06 09:21:26.877 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7008/api/user-account/login, Response status code: 404
+2024-07-06 09:21:36.172 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/bank-accounts - application/json 0
+2024-07-06 09:21:36.177 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/bank-accounts - 404 0 null 5.2998ms
+2024-07-06 09:21:36.179 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7008/api/bank-accounts, Response status code: 404
+2024-07-06 09:22:18.416 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7008/api/v1/user-account/login - application/json 67
+2024-07-06 09:22:18.439 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:22:18.455 -03:00 [INF] Route matched with {action = "Login", controller = "UserAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(MediatR.IMediator, FinanceControl.Application.LoginRequest) on controller FinanceControl.Controllers.UserAccountController (FinanceControl).
+2024-07-06 09:22:18.492 -03:00 [INF] Executing action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:22:18.510 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:22:18.652 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [identity].[AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-07-06 09:22:18.676 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [identity].[AspNetUserRoles] AS [a]
+INNER JOIN [identity].[AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-06 09:22:18.688 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-07-06 09:22:18.693 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:22:18.760 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:22:18.875 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 4000), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [identity].[AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [Name] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpiration] = @p13, [Role] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-06 09:22:18.893 -03:00 [INF] Executed action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 397.6968ms.
+2024-07-06 09:22:18.902 -03:00 [INF] Executing OkObjectResult, writing value of type 'FinanceControl.Application.LoginResponse'.
+2024-07-06 09:22:18.922 -03:00 [INF] Executed action FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) in 462.5136ms
+2024-07-06 09:22:18.923 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:22:18.932 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7008/api/v1/user-account/login - 200 null application/json; charset=utf-8 515.2948ms
+2024-07-06 09:22:43.246 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/bank-accounts - null null
+2024-07-06 09:22:43.249 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/bank-accounts - 404 0 null 2.7129ms
+2024-07-06 09:22:43.251 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7008/api/bank-accounts, Response status code: 404
+2024-07-06 09:22:51.923 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - application/json 0
+2024-07-06 09:22:51.992 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 09:22:51.995 -03:00 [INF] Route matched with {action = "GetAccounts", controller = "BankAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccounts(Microsoft.Extensions.Caching.Memory.IMemoryCache, Int32, Int32) on controller FinanceControl.Controllers.BankAccountController (FinanceControl).
+2024-07-06 09:22:51.998 -03:00 [INF] Executing action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:22:52.000 -03:00 [INF] Getting all bank accounts
+2024-07-06 09:22:53.823 -03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-06 09:22:53.824 -03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-06 09:22:53.874 -03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2024-07-06 09:22:53.885 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Balance], [t].[BalanceInDolar], [t].[CreatedAt], [t].[Name], [t].[UpdatedAt], [t].[UserId], [t0].[Id], [t0].[AccountId], [t0].[BankAccountId], [t0].[CategoryId], [t0].[CreatedAt], [t0].[Description], [t0].[Type], [t0].[UpdatedAt], [t0].[UsdValue], [t0].[Value], [b0].[Id], [b0].[AccountId], [b0].[BankAccountId], [b0].[CategoryId], [b0].[CreatedAt], [b0].[Threshold], [b0].[UpdatedAt], [b0].[Value]
+FROM (
+    SELECT [b].[Id], [b].[Balance], [b].[BalanceInDolar], [b].[CreatedAt], [b].[Name], [b].[UpdatedAt], [b].[UserId]
+    FROM [BankAccounts] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Transaction] AS [t0] ON [t].[Id] = [t0].[BankAccountId]
+LEFT JOIN [BudgetAlert] AS [b0] ON [t].[Id] = [b0].[BankAccountId]
+ORDER BY [t].[Id], [t0].[Id]
+2024-07-06 09:22:53.917 -03:00 [INF] Executed action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1918.0711ms.
+2024-07-06 09:22:53.919 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FinanceControl.Domain.BankAccount, FinanceControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-06 09:22:53.955 -03:00 [INF] Executed action FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) in 1958.1284ms
+2024-07-06 09:22:53.955 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 09:22:53.956 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - 200 null application/json; charset=utf-8 2033.4008ms
+2024-07-06 09:22:57.301 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - application/json 0
+2024-07-06 09:22:57.305 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 09:22:57.306 -03:00 [INF] Route matched with {action = "GetAccounts", controller = "BankAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccounts(Microsoft.Extensions.Caching.Memory.IMemoryCache, Int32, Int32) on controller FinanceControl.Controllers.BankAccountController (FinanceControl).
+2024-07-06 09:22:57.308 -03:00 [INF] Executing action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:22:57.308 -03:00 [INF] Getting all bank accounts
+2024-07-06 09:22:57.309 -03:00 [INF] Executed action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4876ms.
+2024-07-06 09:22:57.310 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FinanceControl.Domain.BankAccount, FinanceControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-06 09:22:57.311 -03:00 [INF] Executed action FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) in 3.8482ms
+2024-07-06 09:22:57.312 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 09:22:57.312 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - 200 null application/json; charset=utf-8 11.4977ms
+2024-07-06 09:22:59.617 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7008/api/v1/user-account/login - application/json 67
+2024-07-06 09:22:59.623 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:22:59.623 -03:00 [INF] Route matched with {action = "Login", controller = "UserAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(MediatR.IMediator, FinanceControl.Application.LoginRequest) on controller FinanceControl.Controllers.UserAccountController (FinanceControl).
+2024-07-06 09:22:59.625 -03:00 [INF] Executing action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:22:59.630 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:22:59.676 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [identity].[AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-07-06 09:22:59.679 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [identity].[AspNetUserRoles] AS [a]
+INNER JOIN [identity].[AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-06 09:22:59.681 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-07-06 09:22:59.683 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:22:59.686 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:22:59.690 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 4000), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [identity].[AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [Name] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpiration] = @p13, [Role] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-06 09:22:59.692 -03:00 [INF] Executed action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 66.4239ms.
+2024-07-06 09:22:59.693 -03:00 [INF] Executing OkObjectResult, writing value of type 'FinanceControl.Application.LoginResponse'.
+2024-07-06 09:22:59.694 -03:00 [INF] Executed action FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) in 69.6581ms
+2024-07-06 09:22:59.695 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:22:59.696 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7008/api/v1/user-account/login - 200 null application/json; charset=utf-8 79.1664ms
+2024-07-06 09:23:00.566 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7008/api/v1/user-account/login - application/json 67
+2024-07-06 09:23:00.568 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:23:00.569 -03:00 [INF] Route matched with {action = "Login", controller = "UserAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(MediatR.IMediator, FinanceControl.Application.LoginRequest) on controller FinanceControl.Controllers.UserAccountController (FinanceControl).
+2024-07-06 09:23:00.570 -03:00 [INF] Executing action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:23:00.575 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:00.621 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [identity].[AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-07-06 09:23:00.624 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [identity].[AspNetUserRoles] AS [a]
+INNER JOIN [identity].[AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-06 09:23:00.626 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-07-06 09:23:00.628 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:00.631 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:00.636 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 4000), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [identity].[AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [Name] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpiration] = @p13, [Role] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-06 09:23:00.637 -03:00 [INF] Executed action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 66.3648ms.
+2024-07-06 09:23:00.638 -03:00 [INF] Executing OkObjectResult, writing value of type 'FinanceControl.Application.LoginResponse'.
+2024-07-06 09:23:00.639 -03:00 [INF] Executed action FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) in 69.115ms
+2024-07-06 09:23:00.640 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:23:00.641 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7008/api/v1/user-account/login - 200 null application/json; charset=utf-8 75.1549ms
+2024-07-06 09:23:01.606 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7008/api/v1/user-account/login - application/json 67
+2024-07-06 09:23:01.609 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:23:01.610 -03:00 [INF] Route matched with {action = "Login", controller = "UserAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(MediatR.IMediator, FinanceControl.Application.LoginRequest) on controller FinanceControl.Controllers.UserAccountController (FinanceControl).
+2024-07-06 09:23:01.612 -03:00 [INF] Executing action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:23:01.616 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:01.663 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [identity].[AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-07-06 09:23:01.666 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [identity].[AspNetUserRoles] AS [a]
+INNER JOIN [identity].[AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-06 09:23:01.668 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-07-06 09:23:01.670 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:01.673 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:01.677 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 4000), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [identity].[AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [Name] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpiration] = @p13, [Role] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-06 09:23:01.679 -03:00 [INF] Executed action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 66.2029ms.
+2024-07-06 09:23:01.680 -03:00 [INF] Executing OkObjectResult, writing value of type 'FinanceControl.Application.LoginResponse'.
+2024-07-06 09:23:01.681 -03:00 [INF] Executed action FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) in 69.1682ms
+2024-07-06 09:23:01.682 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:23:01.683 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7008/api/v1/user-account/login - 200 null application/json; charset=utf-8 76.9604ms
+2024-07-06 09:23:03.189 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7008/api/v1/user-account/login - application/json 67
+2024-07-06 09:23:03.191 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:23:03.192 -03:00 [INF] Route matched with {action = "Login", controller = "UserAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(MediatR.IMediator, FinanceControl.Application.LoginRequest) on controller FinanceControl.Controllers.UserAccountController (FinanceControl).
+2024-07-06 09:23:03.193 -03:00 [INF] Executing action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:23:03.198 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:03.244 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [identity].[AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-07-06 09:23:03.246 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [identity].[AspNetUserRoles] AS [a]
+INNER JOIN [identity].[AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-06 09:23:03.248 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-07-06 09:23:03.249 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:03.252 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:03.256 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 4000), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [identity].[AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [Name] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpiration] = @p13, [Role] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-06 09:23:03.258 -03:00 [INF] Executed action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 63.862ms.
+2024-07-06 09:23:03.259 -03:00 [INF] Executing OkObjectResult, writing value of type 'FinanceControl.Application.LoginResponse'.
+2024-07-06 09:23:03.260 -03:00 [INF] Executed action FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) in 66.5183ms
+2024-07-06 09:23:03.260 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:23:03.261 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7008/api/v1/user-account/login - 200 null application/json; charset=utf-8 72.8284ms
+2024-07-06 09:23:23.426 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7008/api/v1/user-account/login - application/json 67
+2024-07-06 09:23:23.428 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:23:23.429 -03:00 [INF] Route matched with {action = "Login", controller = "UserAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(MediatR.IMediator, FinanceControl.Application.LoginRequest) on controller FinanceControl.Controllers.UserAccountController (FinanceControl).
+2024-07-06 09:23:23.430 -03:00 [INF] Executing action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:23:23.435 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:23.482 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [identity].[AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-07-06 09:23:23.485 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [identity].[AspNetUserRoles] AS [a]
+INNER JOIN [identity].[AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-06 09:23:23.487 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-07-06 09:23:23.489 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:23.492 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 09:23:23.496 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 4000), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [identity].[AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [Name] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpiration] = @p13, [Role] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-06 09:23:23.498 -03:00 [INF] Executed action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 66.4456ms.
+2024-07-06 09:23:23.499 -03:00 [INF] Executing OkObjectResult, writing value of type 'FinanceControl.Application.LoginResponse'.
+2024-07-06 09:23:23.499 -03:00 [INF] Executed action FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) in 69.3532ms
+2024-07-06 09:23:23.500 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 09:23:23.501 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7008/api/v1/user-account/login - 200 null application/json; charset=utf-8 75.0719ms
+2024-07-06 09:24:20.798 -03:00 [WRN] No store type was specified for the decimal property 'Balance' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:24:20.831 -03:00 [WRN] No store type was specified for the decimal property 'BalanceInDolar' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:24:20.832 -03:00 [WRN] No store type was specified for the decimal property 'Threshold' on entity type 'BudgetAlert'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:24:20.832 -03:00 [WRN] No store type was specified for the decimal property 'Value' on entity type 'BudgetAlert'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:24:20.833 -03:00 [WRN] No store type was specified for the decimal property 'UsdValue' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:24:20.834 -03:00 [WRN] No store type was specified for the decimal property 'Value' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 09:24:21.189 -03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 09:24:21.213 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 09:24:21.216 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 09:24:21.218 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 09:24:21.235 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-07-06 09:24:21.248 -03:00 [INF] No migrations were applied. The database is already up to date.
+2024-07-06 09:24:21.329 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 09:24:21.331 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 09:24:21.333 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 09:24:21.335 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 09:24:21.338 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-07-06 09:24:21.340 -03:00 [INF] No migrations were applied. The database is already up to date.
+2024-07-06 09:24:21.358 -03:00 [INF] User profile is available. Using 'C:\Users\Bruno Joaquim\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-06 09:24:21.662 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-06 09:24:21.813 -03:00 [INF] Now listening on: https://localhost:7008
+2024-07-06 09:24:21.813 -03:00 [INF] Now listening on: http://localhost:5160
+2024-07-06 09:24:21.815 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-06 09:24:21.816 -03:00 [INF] Hosting environment: Development
+2024-07-06 09:24:21.817 -03:00 [INF] Content root path: C:\Users\Bruno Joaquim\Desktop\financialControl\src
+2024-07-06 09:24:35.263 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - application/json 0
+2024-07-06 09:24:35.425 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 09:24:35.439 -03:00 [INF] Route matched with {action = "GetAccounts", controller = "BankAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccounts(Microsoft.Extensions.Caching.Memory.IMemoryCache, Int32, Int32) on controller FinanceControl.Controllers.BankAccountController (FinanceControl).
+2024-07-06 09:24:35.451 -03:00 [INF] Executing action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:24:35.453 -03:00 [INF] Getting all bank accounts
+2024-07-06 09:24:36.842 -03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-06 09:24:36.843 -03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-06 09:24:36.910 -03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2024-07-06 09:24:36.919 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Balance], [t].[BalanceInDolar], [t].[CreatedAt], [t].[Name], [t].[UpdatedAt], [t].[UserId], [t0].[Id], [t0].[AccountId], [t0].[BankAccountId], [t0].[CategoryId], [t0].[CreatedAt], [t0].[Description], [t0].[Type], [t0].[UpdatedAt], [t0].[UsdValue], [t0].[Value], [b0].[Id], [b0].[AccountId], [b0].[BankAccountId], [b0].[CategoryId], [b0].[CreatedAt], [b0].[Threshold], [b0].[UpdatedAt], [b0].[Value]
+FROM (
+    SELECT [b].[Id], [b].[Balance], [b].[BalanceInDolar], [b].[CreatedAt], [b].[Name], [b].[UpdatedAt], [b].[UserId]
+    FROM [BankAccounts] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Transaction] AS [t0] ON [t].[Id] = [t0].[BankAccountId]
+LEFT JOIN [BudgetAlert] AS [b0] ON [t].[Id] = [b0].[BankAccountId]
+ORDER BY [t].[Id], [t0].[Id]
+2024-07-06 09:24:36.959 -03:00 [INF] Executed action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1504.1117ms.
+2024-07-06 09:24:36.968 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FinanceControl.Domain.BankAccount, FinanceControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-06 09:24:37.024 -03:00 [INF] Executed action FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) in 1580.0093ms
+2024-07-06 09:24:37.025 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 09:24:37.035 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - 200 null application/json; charset=utf-8 1774.6154ms
+2024-07-06 09:24:39.653 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - application/json 0
+2024-07-06 09:24:39.660 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 09:24:39.661 -03:00 [INF] Route matched with {action = "GetAccounts", controller = "BankAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccounts(Microsoft.Extensions.Caching.Memory.IMemoryCache, Int32, Int32) on controller FinanceControl.Controllers.BankAccountController (FinanceControl).
+2024-07-06 09:24:39.663 -03:00 [INF] Executing action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:24:39.663 -03:00 [INF] Getting all bank accounts
+2024-07-06 09:24:39.664 -03:00 [INF] Executed action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5132ms.
+2024-07-06 09:24:39.665 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FinanceControl.Domain.BankAccount, FinanceControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-06 09:24:39.666 -03:00 [INF] Executed action FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) in 4.194ms
+2024-07-06 09:24:39.667 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 09:24:39.668 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - 200 null application/json; charset=utf-8 14.4997ms
+2024-07-06 09:24:43.574 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - application/json 0
+2024-07-06 09:24:43.580 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 09:24:43.581 -03:00 [INF] Route matched with {action = "GetAccounts", controller = "BankAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccounts(Microsoft.Extensions.Caching.Memory.IMemoryCache, Int32, Int32) on controller FinanceControl.Controllers.BankAccountController (FinanceControl).
+2024-07-06 09:24:43.582 -03:00 [INF] Executing action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) - Validation state: "Valid"
+2024-07-06 09:24:43.583 -03:00 [INF] Getting all bank accounts
+2024-07-06 09:24:44.904 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Balance], [t].[BalanceInDolar], [t].[CreatedAt], [t].[Name], [t].[UpdatedAt], [t].[UserId], [t0].[Id], [t0].[AccountId], [t0].[BankAccountId], [t0].[CategoryId], [t0].[CreatedAt], [t0].[Description], [t0].[Type], [t0].[UpdatedAt], [t0].[UsdValue], [t0].[Value], [b0].[Id], [b0].[AccountId], [b0].[BankAccountId], [b0].[CategoryId], [b0].[CreatedAt], [b0].[Threshold], [b0].[UpdatedAt], [b0].[Value]
+FROM (
+    SELECT [b].[Id], [b].[Balance], [b].[BalanceInDolar], [b].[CreatedAt], [b].[Name], [b].[UpdatedAt], [b].[UserId]
+    FROM [BankAccounts] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Transaction] AS [t0] ON [t].[Id] = [t0].[BankAccountId]
+LEFT JOIN [BudgetAlert] AS [b0] ON [t].[Id] = [b0].[BankAccountId]
+ORDER BY [t].[Id], [t0].[Id]
+2024-07-06 09:24:44.906 -03:00 [INF] Executed action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1323.0765ms.
+2024-07-06 09:24:44.907 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FinanceControl.Domain.BankAccount, FinanceControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-06 09:24:44.908 -03:00 [INF] Executed action FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) in 1326.2188ms
+2024-07-06 09:24:44.909 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 09:24:44.910 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - 200 null application/json; charset=utf-8 1336.3513ms
+2024-07-06 10:12:35.963 -03:00 [WRN] No store type was specified for the decimal property 'Balance' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:12:35.999 -03:00 [WRN] No store type was specified for the decimal property 'BalanceInDolar' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:12:36.000 -03:00 [WRN] No store type was specified for the decimal property 'Threshold' on entity type 'BudgetAlert'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:12:36.001 -03:00 [WRN] No store type was specified for the decimal property 'Value' on entity type 'BudgetAlert'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:12:36.002 -03:00 [WRN] No store type was specified for the decimal property 'UsdValue' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:12:36.002 -03:00 [WRN] No store type was specified for the decimal property 'Value' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:12:36.385 -03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 10:12:36.412 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 10:12:36.416 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 10:12:36.418 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 10:12:36.446 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-07-06 10:12:36.460 -03:00 [INF] No migrations were applied. The database is already up to date.
+2024-07-06 10:12:36.554 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 10:12:36.557 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 10:12:36.559 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 10:12:36.561 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 10:12:36.565 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-07-06 10:12:36.566 -03:00 [INF] No migrations were applied. The database is already up to date.
+2024-07-06 10:12:36.589 -03:00 [INF] User profile is available. Using 'C:\Users\Bruno Joaquim\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-06 10:12:36.942 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-06 10:12:37.105 -03:00 [INF] Now listening on: https://localhost:7008
+2024-07-06 10:12:37.106 -03:00 [INF] Now listening on: http://localhost:5160
+2024-07-06 10:12:37.108 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-06 10:12:37.109 -03:00 [INF] Hosting environment: Development
+2024-07-06 10:12:37.109 -03:00 [INF] Content root path: C:\Users\Bruno Joaquim\Desktop\financialControl\src
+2024-07-06 10:12:38.350 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7008/api/v1/user-account/login - application/json 67
+2024-07-06 10:12:38.456 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2024-07-06 10:12:38.498 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [identity].[AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-07-06 10:12:38.523 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [identity].[AspNetUserRoles] AS [a]
+INNER JOIN [identity].[AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-06 10:12:38.534 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 10:12:38.549 -03:00 [INF] Route matched with {action = "Login", controller = "UserAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(MediatR.IMediator, FinanceControl.Application.LoginRequest) on controller FinanceControl.Controllers.UserAccountController (FinanceControl).
+2024-07-06 10:12:38.591 -03:00 [INF] Executing action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) - Validation state: "Valid"
+2024-07-06 10:12:38.603 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 10:12:38.681 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [identity].[AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-07-06 10:12:38.685 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [identity].[AspNetUserRoles] AS [a]
+INNER JOIN [identity].[AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-06 10:12:38.693 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-07-06 10:12:38.697 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 10:12:38.756 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 10:12:38.862 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 4000), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [identity].[AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [Name] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpiration] = @p13, [Role] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-06 10:12:38.881 -03:00 [INF] Executed action method FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 286.5036ms.
+2024-07-06 10:12:38.892 -03:00 [INF] Executing OkObjectResult, writing value of type 'FinanceControl.Application.LoginResponse'.
+2024-07-06 10:12:38.917 -03:00 [INF] Executed action FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl) in 363.7137ms
+2024-07-06 10:12:38.919 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.UserAccountController.LoginAsync (FinanceControl)'
+2024-07-06 10:12:38.929 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7008/api/v1/user-account/login - 200 null application/json; charset=utf-8 582.2586ms
+2024-07-06 10:12:46.117 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - application/json 0
+2024-07-06 10:12:46.196 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 10:12:46.200 -03:00 [INF] Route matched with {action = "GetAccounts", controller = "BankAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccounts(FinanceControl.Infra.CacheProvider, Int32, Int32) on controller FinanceControl.Controllers.BankAccountController (FinanceControl).
+2024-07-06 10:12:46.203 -03:00 [INF] Executing action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) - Validation state: "Valid"
+2024-07-06 10:12:46.205 -03:00 [INF] Getting all bank accounts
+2024-07-06 10:13:12.328 -03:00 [INF] Executed action FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) in 26127.2981ms
+2024-07-06 10:13:12.336 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 10:13:12.371 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: UnableToConnect on http://localhost:6379:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.7.27.49176, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: http://localhost:6379:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: BRUNO(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=0,Free=32767,Min=24,Max=32767), POOL: (Threads=9,QueuedItems=0,CompletedItems=260,Timers=16), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on http://localhost:6379:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.7.27.49176
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at FinanceControl.Infra.CacheProvider.GetOrUpdateAsync[T](String key, Func`1 valueProvider) in C:\Users\Bruno Joaquim\Desktop\financialControl\src\Infra\CacheProvider.cs:line 13
+   at FinanceControl.Controllers.BankAccountController.GetAccounts(CacheProvider cacheProvider, Int32 skip, Int32 take) in C:\Users\Bruno Joaquim\Desktop\financialControl\src\Controllers\BankAccountController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at FinanceControl.Infra.Middlewares.LogScopedMiddleware.InvokeAsync(HttpContext context) in C:\Users\Bruno Joaquim\Desktop\financialControl\src\Infra\Middlewares\LogScopedMiddleware.cs:line 16
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-06 10:13:12.402 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - 500 null text/plain; charset=utf-8 26285.2432ms
+2024-07-06 10:13:56.453 -03:00 [WRN] No store type was specified for the decimal property 'Balance' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:13:56.487 -03:00 [WRN] No store type was specified for the decimal property 'BalanceInDolar' on entity type 'BankAccount'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:13:56.488 -03:00 [WRN] No store type was specified for the decimal property 'Threshold' on entity type 'BudgetAlert'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:13:56.489 -03:00 [WRN] No store type was specified for the decimal property 'Value' on entity type 'BudgetAlert'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:13:56.490 -03:00 [WRN] No store type was specified for the decimal property 'UsdValue' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:13:56.490 -03:00 [WRN] No store type was specified for the decimal property 'Value' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-06 10:13:56.842 -03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 10:13:56.866 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 10:13:56.869 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 10:13:56.871 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 10:13:56.887 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-07-06 10:13:56.899 -03:00 [INF] No migrations were applied. The database is already up to date.
+2024-07-06 10:13:56.981 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 10:13:56.983 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 10:13:56.985 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-06 10:13:56.987 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-07-06 10:13:56.990 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-07-06 10:13:56.992 -03:00 [INF] No migrations were applied. The database is already up to date.
+2024-07-06 10:13:57.010 -03:00 [INF] User profile is available. Using 'C:\Users\Bruno Joaquim\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-06 10:13:57.323 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [identity].[AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-06 10:13:57.474 -03:00 [INF] Now listening on: https://localhost:7008
+2024-07-06 10:13:57.475 -03:00 [INF] Now listening on: http://localhost:5160
+2024-07-06 10:13:57.477 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-06 10:13:57.478 -03:00 [INF] Hosting environment: Development
+2024-07-06 10:13:57.478 -03:00 [INF] Content root path: C:\Users\Bruno Joaquim\Desktop\financialControl\src
+2024-07-06 10:13:59.113 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - application/json 0
+2024-07-06 10:13:59.299 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 10:13:59.312 -03:00 [INF] Route matched with {action = "GetAccounts", controller = "BankAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccounts(FinanceControl.Infra.CacheProvider, Int32, Int32) on controller FinanceControl.Controllers.BankAccountController (FinanceControl).
+2024-07-06 10:13:59.324 -03:00 [INF] Executing action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) - Validation state: "Valid"
+2024-07-06 10:13:59.326 -03:00 [INF] Getting all bank accounts
+2024-07-06 10:14:07.236 -03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-06 10:14:07.237 -03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-06 10:14:07.302 -03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2024-07-06 10:14:07.325 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Balance], [t].[BalanceInDolar], [t].[CreatedAt], [t].[Name], [t].[UpdatedAt], [t].[UserId], [t0].[Id], [t0].[AccountId], [t0].[BankAccountId], [t0].[CategoryId], [t0].[CreatedAt], [t0].[Description], [t0].[Type], [t0].[UpdatedAt], [t0].[UsdValue], [t0].[Value], [b0].[Id], [b0].[AccountId], [b0].[BankAccountId], [b0].[CategoryId], [b0].[CreatedAt], [b0].[Threshold], [b0].[UpdatedAt], [b0].[Value]
+FROM (
+    SELECT [b].[Id], [b].[Balance], [b].[BalanceInDolar], [b].[CreatedAt], [b].[Name], [b].[UpdatedAt], [b].[UserId]
+    FROM [BankAccounts] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Transaction] AS [t0] ON [t].[Id] = [t0].[BankAccountId]
+LEFT JOIN [BudgetAlert] AS [b0] ON [t].[Id] = [b0].[BankAccountId]
+ORDER BY [t].[Id], [t0].[Id]
+2024-07-06 10:14:21.605 -03:00 [INF] Executed action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21017.2334ms.
+2024-07-06 10:14:21.614 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FinanceControl.Domain.BankAccount, FinanceControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-06 10:14:21.632 -03:00 [INF] Executed action FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) in 22316.0909ms
+2024-07-06 10:14:21.633 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 10:14:21.643 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - 200 null application/json; charset=utf-8 22533.0947ms
+2024-07-06 10:14:35.113 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - application/json 0
+2024-07-06 10:14:35.119 -03:00 [INF] Executing endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 10:14:35.120 -03:00 [INF] Route matched with {action = "GetAccounts", controller = "BankAccount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccounts(FinanceControl.Infra.CacheProvider, Int32, Int32) on controller FinanceControl.Controllers.BankAccountController (FinanceControl).
+2024-07-06 10:14:35.122 -03:00 [INF] Executing action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) - Validation state: "Valid"
+2024-07-06 10:14:35.123 -03:00 [INF] Getting all bank accounts
+2024-07-06 10:14:45.222 -03:00 [INF] Executed action method FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10099.2507ms.
+2024-07-06 10:14:45.226 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FinanceControl.Domain.BankAccount, FinanceControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-06 10:14:45.227 -03:00 [INF] Executed action FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl) in 10105.8222ms
+2024-07-06 10:14:45.228 -03:00 [INF] Executed endpoint 'FinanceControl.Controllers.BankAccountController.GetAccounts (FinanceControl)'
+2024-07-06 10:14:45.229 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/v1/bank-accounts - 200 null application/json; charset=utf-8 10116.0772ms

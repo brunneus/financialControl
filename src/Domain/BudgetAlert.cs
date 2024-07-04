@@ -1,33 +1,32 @@
-﻿namespace FinanceControl.Domain
+﻿namespace FinanceControl.Domain;
+
+public class BudgetAlert : Entity
 {
-    public class BudgetAlert : Entity
+    private BudgetAlert()
     {
-        private BudgetAlert()
-        {
 
-        }
+    }
 
-        public BudgetAlert(Account account, TransactionCategory category, decimal value, decimal threshold)
-        {
-            AccountId = account.Id;
-            CategoryId = category.Id;
-            Value = value;
-            Threshold = threshold;
-        }
+    public BudgetAlert(BankAccount account, TransactionCategory category, decimal value, decimal threshold)
+    {
+        AccountId = account.Id;
+        CategoryId = category.Id;
+        Value = value;
+        Threshold = threshold;
+    }
 
-        public decimal Value { get; private set; }
-        public decimal Threshold { get; private set; }
-        public string CategoryId { get; init; }
-        public string AccountId { get; init; }
+    public decimal Value { get; private set; }
+    public decimal Threshold { get; private set; }
+    public string CategoryId { get; init; }
+    public string AccountId { get; init; }
 
-        public bool HasExceedThreshold(Account account)
-        {
-            var categoryTransactions = account.Transactions
-                .Where(ac => ac.CategoryId == CategoryId);
+    public bool HasExceedThreshold(BankAccount account)
+    {
+        var categoryTransactions = account.Transactions
+            .Where(ac => ac.CategoryId == CategoryId);
 
-            var transactionsSum = account.Transactions.Sum(t => t.Value);
+        var transactionsSum = account.Transactions.Sum(t => t.Value);
 
-            return (transactionsSum / Value) > Threshold;
-        }
+        return (transactionsSum / Value) > Threshold;
     }
 }
